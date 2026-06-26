@@ -22,3 +22,27 @@ Linkerből 2.45-ös verziót használtam, gcc-ből 15.2.0-s verziót.
 
 ### Következő lépés
 - Hozzáadtam a PATH-hoz az új cross-compilert, hogy el tudjam érni könnyen amikor szükség lesz rá
+
+
+## [2026-06-26] – OSDEV wiki basic introduction rész elolvasása, barebones tutorial elkezdése
+
+### Mit csináltam
+- Először is elolvastam az OSDEV wiki basic introduction szekciójában található oldalakat
+- Aztán leellenőriztem, hogy még mindig megvan-e a cross-compiler amit a múltkor csináltam
+- Elkezdtem az OSDEV wiki barebones tutorialját: GRUB bootloadert használva írunk egy alap kernelt
+
+### Miért
+- Elolvastam az OSDEV wiki basic introduction szekciójában található oldalakat, hogy képben legyek, hogy mire számítsak a továbbiakban
+- Biztosra akartam menni, hogy nem törlődött a virtuális gépről semmi csak úgy
+- A barebones tutorial az oldalon egy kezdőknek készült tutorial, úgy gondoltam érdemes azzal kezdeni
+
+### Problémák / hibák
+- Amikor le akartam ellenőrizni, hogy megvan-e még a cross compiler amit a múltkor csináltam akkor azt láttam, hogy nincsen. Ez azért van mert a cross compiler
+nagyon nagy, majdnem 10GB helyet foglal és ezért egy másik tárolóra helyeztem és nem voltam tisztában vele, hogy ezt a tárolót minden újraindításkor mountolni kell.
+
+### Megoldás / tanulság
+- Megcsináltam, hogy most már ne kelljen minden újraindításkor mountolni a hozzáadott tárhelyet:
+    - A sudo blkid /dev/sdb1 paranccsal lekértem a tároló UUID-jét
+    - Majd a sudo nano /etc/fstab paranccsal megnyitottam az fstab fájlt amibe beleírtam az új tároló szükséges adatait, így a rendszer automatikusan felismeri 
+
+### Következő lépés
