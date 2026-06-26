@@ -1,5 +1,6 @@
 ## [2026-06-21] – Cross-compiler elkészítése
 ## Cross-compiler helye a saját fájlstruktúrámban: /mnt/build/opt/cross/bin/i686-elf-gcc
+## Cross-compiler elérése egyszerűen: A $crossgcc környezeti változó az i686-elf-gcc fájlra mutat 
 
 
 ### Mit csináltam
