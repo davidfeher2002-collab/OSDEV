@@ -46,3 +46,5 @@ nagyon nagy, majdnem 10GB helyet foglal és ezért egy másik tárolóra helyezt
     - Majd a sudo nano /etc/fstab paranccsal megnyitottam az fstab fájlt amibe beleírtam az új tároló szükséges adatait, így a rendszer automatikusan felismeri 
 
 ### Következő lépés
+- Jelenleg itt tartok: https://wiki.osdev.org/Bare_Bones
+- Ezen belül a bootstrap assembly résznél. Az ott leírt kódot fogom tanulmányozni
